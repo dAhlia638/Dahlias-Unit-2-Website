@@ -1,0 +1,85 @@
+/* The code on lines 2-4 centers the text of all h1's on the page.*/
+h1{
+    text-align:center;
+}
+/*The code on lines 6-11 centers all images on the page and gives them a width of 400px.*/
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:560px;
+  height:400px;
+}
+ 
+
+
+h1{
+    background-color: grey;
+    color: white;
+  text-shadow: 2px 2px black;
+   font-family: 'Akaya Telivigala';font-size: 35px;
+
+}
+
+/* The code on lines 14-16 centers the text of all h2's on the page*/
+h2{
+    text-align:center;
+}
+
+/* The code on lines 19-22 aligns all the sections horizontally on the bottom*/
+.sectionsContainer{
+    display:flex;
+    justify-content:space-between;
+}
+.image1 {
+ width: 430px;
+ height: 335px;
+}
+a:hover {
+  background-color: lightyellow;
+}
+.image2 {
+ width: 430px;
+ height:335px;
+}
+.image3 {
+ width: 430px;
+ height: 335px;   
+}
+/* The code on lines 25-28 gives  a solid black border to section and puts space between them (the margin) */
+.section{
+    border: 5px black dotted;
+    margin:5px;
+    padding: 5px;
+}
+body {
+    background-color: darkgrey;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: red;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
